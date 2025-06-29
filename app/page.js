@@ -454,7 +454,7 @@ function ArtistCard({ artist }) {
     let chatHistory = [];
     chatHistory.push({ role: "user", parts: [{ text: prompt }] });
     const payload = { contents: chatHistory };
-    const apiKey = "AIzaSyCHHLf9ZNRzG9c2l6RPtXuEeV8n7YLhsHY"; // Leave as-is, Canvas will provide in runtime.
+    const apiKey = ""; // Leave as-is, Canvas will provide in runtime.
     const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
 
     try {
@@ -828,7 +828,7 @@ function ArtistOnboardingForm() {
     let chatHistory = [];
     chatHistory.push({ role: "user", parts: [{ text: prompt }] });
     const payload = { contents: chatHistory };
-    const apiKey = "AIzaSyCHHLf9ZNRzG9c2l6RPtXuEeV8n7YLhsHY"; // Leave as-is, Canvas will provide in runtime.
+    const apiKey = ""; // Leave as-is, Canvas will provide in runtime.
     const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
 
     try {
